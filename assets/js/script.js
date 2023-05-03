@@ -44,7 +44,7 @@ const toggleForms = () => {
     editForm.classList.toggle("hide");
     todoForm.classList.toggle("hide");
     todoList.classList.toggle("hide");
-}
+};
 
 const updateTodo = (text) => {
     
@@ -56,11 +56,11 @@ const updateTodo = (text) => {
 
         if (todoTitle.innerHTML === oldInputvalue) {
             
-            todoTitle.innerText = text
+            todoTitle.innerText = text;
         }
 
-    })
-}
+    });
+};
 
 //Eventos
 
@@ -73,7 +73,7 @@ todoForm.addEventListener("submit", (e) => {
     if(inputValue) {
         saveTodo(inputValue)
     }
-})
+});
 
 document.addEventListener("click", (e) => {
     
